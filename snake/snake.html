@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake - Arcadia</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+    <header>
+        <h1>Snake</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="#rules" id="open-rules">Règles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="snake">
+            <h2>Jouez au Snake</h2>
+            <div class="gameboy-container">
+                <div class="screen">
+                    <canvas id="snake-game" width="300" height="300"></canvas>
+                </div>
+                <p class="score">Score : <span id="score">0</span></p>
+                <button id="start-btn">Démarrer le jeu</button>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="rules-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Règles du jeu Snake</h2>
+            <p>
+                1. Utilisez les touches fléchées pour déplacer le serpent.<br>
+                2. Mangez les pommes rouges pour marquer des points.<br>
+                3. Chaque pomme augmente la longueur du serpent.<br>
+                4. Si le serpent heurte un mur ou lui-même, le jeu est terminé.<br>
+                5. Essayez d'obtenir le meilleur score possible !
+            </p>
+        </div>
+    </div>
+
+    <script src="snake.js"></script>
+</body>
+</html>
