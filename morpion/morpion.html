@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="../morpion/morpion.css">
 </head>
 <body>
-    <div class="game-container">
+    <header>
+        <h1>Morpion</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#rules" id="open-rules">Règles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="game-container" id="game">
         <h1>Morpion</h1>
         <div class="board">
             <div class="cell" data-index="0"></div>
@@ -23,6 +34,21 @@
         <button class="reset">Réinitialiser</button>
         <p class="status"></p>
     </div>
+
+    <div class="modal" id="rules-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Règles du Morpion</h2>
+            <p>
+                1. Le jeu se joue sur une grille 3x3.<br>
+                2. Chaque joueur choisit un symbole : X ou O.<br>
+                3. Les joueurs jouent à tour de rôle.<br>
+                4. Le premier qui aligne 3 symboles (horizontalement, verticalement ou en diagonale) gagne.<br>
+                5. Si toutes les cases sont remplies sans gagnant, c'est un match nul.
+            </p>
+        </div>
+    </div>
+
     <script src="../morpion/morpion.js"></script>
 </body>
 </html>
